@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.cinehub"
+    namespace = "com.example.livrostore"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.cinehub"
+        applicationId = "com.example.livrostore"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -35,10 +35,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    
     val navVersion = "2.7.7"
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
-    
-    implementation("androidx.fragment:fragment-ktx:1.6.2")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 }
